@@ -13,7 +13,7 @@ describe('Login', () => {
   let dbConnection: Connection;
   let userRepository: Repository<User>;
 
-  const userPassword = 'pass1';
+  const userPassword = process.env.FLY_IO_PW;
   const user = new User();
   user.username = 'Badger';
   user.name = 'Brandon Mayhew';
